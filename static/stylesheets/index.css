@@ -24,8 +24,8 @@
 #but1{
     font-size: xx-large;
     position: absolute;
-    top:70vh ;
-    left: 20vh;
+    top:55vh ;
+    right: 35vh;
     background-color: white;
     font-weight: bolder;
     border: 1px solid transparent;
@@ -40,7 +40,58 @@ color: rgb(28, 195, 236);
 
 }
 
-#features{
-display: flex;
-flex-direction: column;
+
+#features img{
+    width: 50vh;
+}
+
+section > br{
+    clear: both;
+}
+
+#slider img{
+    width: 80vw;
+    height: 80vh;
+    /* background-color: rgb(28, 195, 236); */
+}
+
+.dots {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    left: 47vw;
+  }
+  
+  .active, .dots:hover {
+    background-color: #717171;
+  }
+  #slider p{
+    position: absolute;
+    top: 45vh;
+    right: 10vw;
+  }
+
+  #features{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 100px;
+  position: absolute;
+  left: 22vw;
+  cursor: pointer;
+}
+.feature{
+border: 2px solid  rgb(208, 208, 208);
+}
+.feature:hover {
+    position: relative;
+    top: -.5em;
+    
+
 }
