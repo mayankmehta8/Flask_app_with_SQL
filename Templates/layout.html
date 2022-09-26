@@ -1,14 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackathon</title>
+    <link rel="stylesheet" href="./layout.css">
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-    {% block body %}
-    {% endblock %}
+    <header>
+
+        <nav id="nav">
+            <ul>
+                    <li><a href="#"><b><span id="logo">ALT F4</span></b></a></li>
+                   
+                    <li><a href="#">Question Paper Generator</a>
+                    <li><a href="#">Study Material</a>
+                    <li><a href="#">Chat Room</a>
+                    <li><a href="#">Sign Up</a>
+
+                    <li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <section>
+        <div class="slide1">
+            <img src="/T17-Alt_F4/images/bg1.jpg" alt="">
+        </div>
+        <!-- <div class="slide2">
+            <img src="/T17-Alt_F4/images/jett.jpg" alt="">
+        </div>
+        <div class="slide3">
+            <img src="/T17-Alt_F4/images/sage.jpg" alt="">
+        </div>
+        <div class="slide4">
+            <img src="/T17-Alt_F4/images/valowall.jpg" alt="">
+        </div> -->
+
+        <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlides(1)">&#10095;</a>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- {% block body %}
+    {% endblock %} -->
+
+
+
+
+
 </body>
+
 </html>

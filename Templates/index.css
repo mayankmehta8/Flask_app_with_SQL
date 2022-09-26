@@ -1,0 +1,23 @@
+.prev{
+    cursor: pointer;
+    width: auto;
+    position: absolute;
+    top: 50vh;
+    /* background-color: transparent; */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: opacity(10px);
+    font-weight: bold;
+    padding: 10px;
+}
+.next{
+    cursor: pointer;
+    width: auto;
+    position: absolute;
+    right: 0px;
+    top: 50vh;
+    /* background-color: transparent; */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: opacity(10px);
+    font-weight: bold;
+    padding: 10px;
+}
