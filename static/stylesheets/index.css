@@ -21,3 +21,26 @@
     font-weight: bold;
     padding: 10px;
 }
+#but1{
+    font-size: xx-large;
+    position: absolute;
+    top:70vh ;
+    left: 20vh;
+    background-color: white;
+    font-weight: bolder;
+    border: 1px solid transparent;
+    border-radius: 76px;
+    padding: 20px;
+    height: 10vh;
+    width: 15vw;
+    cursor: pointer;
+}
+#but1:hover{
+color: rgb(28, 195, 236);
+
+}
+
+#features{
+display: flex;
+flex-direction: column;
+}
