@@ -25,19 +25,20 @@
     width: max-content;
     margin-left: 5vw;
     
-    color: white;
+    color: rgb(223, 223, 223);
 }
 
 #nav ul li a:hover {
-    color: rgb(28, 195, 236);
-    background-color: rgb(255, 255, 255);
-    padding: 3vh;
-    border: 1px solid rgb(28, 94, 236);
+    /* background-color: rgb(255, 255, 255); */
+    /* padding: 3vh; */
+    /* border: 1px solid rgb(175, 19, 232); */
+    color: white;
+    /* font-size: 22px; */
 }
 
 #nav{
-    padding: 20px ;
-    line-height: 3vh;
+    padding: 25px ;
+    line-height: 4vh;
     display: flex;
     justify-content: center;
     background-color:rgb(175, 19, 232) ;
@@ -58,4 +59,8 @@ nav img{
 h1{
     display: flex;
     justify-content: center;
+}
+
+#logo{
+    height: 10vh;
 }

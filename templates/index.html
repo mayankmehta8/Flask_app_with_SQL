@@ -4,11 +4,12 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/nav.css') }}">
 {% endblock %}
 {% block body %}
+
 <br>
     <section id="slider">
     <div class="slide1">
         <img src="./static/images/bg1 (2).jpeg" alt="">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Expedita sapiente accusantium officiis at voluptates deserunt nisi </p>
+        <b><p>GUIDING YOU IN <br>YOUR DARKEST TIMES</p></b>
     </div>
     <!-- <div class="slide2">
         <img src="/T17-Alt_F4/images/jett.jpg" alt="">
@@ -41,18 +42,18 @@
 <section id="features">
 
     <div class="feature">
-        <img src="./static/images/question paper button.png" alt="Question Bank">
+        <a href="./qp.html" target="_main"><img src="./static/images/question paper button.png" alt="Question Bank"></a>
         
 
     </div>
 
     <div class="feature">
-        <img src="./static/images/discussion forum button.png" alt="Chat Room">
+        <a href="./chat.html" target="_main"><img src="./static/images/discussion forum button.png" alt="Chat Room"></a>
         
     </div>
 
     <div class="feature">
-        <img src="./static/images/study material button.png" alt="Study Material">
+        <a href="./studyMaterial.html" target="_main"><img src="./static/images/study material button.png" alt="Study Material"></a>
         
 
 
@@ -61,10 +62,13 @@
     </div>
 
     <div class="feature">
-        <img src="./static/images/sppu updates button.png" alt="SPPU Updates">
+        <a href="http://sppudocs.unipune.ac.in/sites/news_events/SitePages/Home.aspx" target="_main"></a><img src="./static/images/sppu updates button.png" alt="SPPU Updates">
 
     </div><br>
-
+    <br>
 </section>
+
+<br><br><br>
+
 
 {% endblock %}

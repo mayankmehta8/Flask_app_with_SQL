@@ -1,5 +1,5 @@
 from flask import Flask, render_template, url_for, redirect
-from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user, current_user
+from flask_login import UserMixin
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import InputRequired, Length, ValidationError
@@ -57,7 +57,9 @@ def register():
         db.session.commit()
         return redirect(url_for("login"))
     return render_template("register.html",form=form)
-
+@app.route("/aboout")
+def about():
+    return render_template("about.html")
 if __name__=='__main__':
     app.run(debug=True)
     
