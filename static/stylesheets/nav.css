@@ -44,10 +44,8 @@
 }
 #nav ul{
     /* background: white; */
-    /* position: fixed; */
     word-spacing: 5px;
 }
-
 
 
 nav img{
@@ -55,4 +53,9 @@ nav img{
     padding: 1px;
     height: 25px;
     width: 25px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
 }
