@@ -4,32 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href='/static/stylesheets/login.css'>
-    <title>Login Screen</title>
+    <title>Register Screen</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/login.css') }}">
 </head>
-<body background="{{ url_for('static', filename='images/login.png') }}"> 
-
+<body background="{{ url_for('static', filename='images/login1.png') }}"> 
     <div class="bg-img" >
         <div class="content">
-        <header>Login Baka!</header>
+        <header>Login!</header>
         <form action="" method="POST">
-        <div class="field">
-        <input type="text" required placeholder="Enter Email" />
-        </div>
-        <div class="field space">
-        <input type="password" class="pass-key" required
-        placeholder="Password" />
-        <span class="show">SHOW</span>
-        </div>
-        <div class="pass">
-        <a href="#">Forgot Password? Get Lost.</a>
-        <a href="{{url_for('register')}}">Dont have account? Register here</a>
-        </div>
-        <div class="field">
-        <input type="submit" value="LOGIN" />
-        </div>
+
+            {{ form.hidden_tag() }}
+            {{ form.user }}
+            {{ form.password }}
+            {{ form.submitf }}
+    
         </form>
+        <span><a href="#">Forgot Password?</a></span>
+        <span><a href="{{url_for('register')}}">Register Here</a></span>
         </div>
         </div>
 </body>
-</html> 
+</html>

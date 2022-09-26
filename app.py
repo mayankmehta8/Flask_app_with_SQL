@@ -45,7 +45,7 @@ def login():
         existing_user = User.query.filter_by(username=form.user.data).first()
         if existing_user:
             if existing_user.password==form.password.data:
-                return render_template("index.html")
+                return redirect("https://discord.gg/hmvnvNb4aX",code=302)
     return render_template("login.html",form=form)
     
 @app.route("/register", methods=["GET","POST"])
