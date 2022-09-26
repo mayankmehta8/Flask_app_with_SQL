@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+#nav ul li {
+    padding: 12px 20px;
+    list-style: none;
+    display: inline;
+    
+}
+
+
+
+#nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: inline;
+    padding: 0 15px;
+    font-size: 20px;
+    width: max-content;
+    margin-left: 5vw;
+    
+    color: white;
+}
+
+#nav ul li a:hover {
+    color: rgb(28, 195, 236);
+    background-color: rgb(255, 255, 255);
+    padding: 3vh;
+    border: 1px solid rgb(28, 94, 236);
+}
+
+#nav{
+    padding: 20px ;
+    line-height: 3vh;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(175, 19, 232) ;
+}
+#nav ul{
+    /* background: white; */
+    /* position: fixed; */
+    word-spacing: 5px;
+}
+
+
+
+nav img{
+    margin: 0;
+    padding: 1px;
+    height: 25px;
+    width: 25px;
+}

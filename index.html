@@ -5,26 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/stylesheets/index.css">
-    <link rel="stylesheet" href="/static/stylesheets/layout.css">
+    <link rel="stylesheet" href="/static/stylesheets/nav.css">
     <title>Document</title>
 </head>
 <body>
     <nav id="nav">
         <ul>
-                <li><a href="#"><b><span id="logo">ALT F4</span></b></a></li>
-               
-                <li><a href="#">Question Paper Generator</a>
-                <li><a href="#">Study Material</a>
-                <li><a href="#">Chat Room</a>
-                <li><a href="#">Sign Up</a>
+            
+            <!-- <li><a href="#"><b><span id="logo"><img src="./static/images/ourlogo.png" alt=""></span></b></a></li> -->
+                <li><a href="./qp.html" target="_main">Question Paper Generator</a>
+                <li><a href="./studyMaterial.html" target="_main">Study Material</a>
+                <li><a href="#" target="_main">Chat Room</a>
+                <li><a href="./login.html" target="_main">Sign Up</a>
 
                 <li>
 
         </ul>
     </nav>
-    <section>
+    <section id="slider">
     <div class="slide1">
-        <img src="static/images/bg1.jpg" alt="">
+        <img src="./static/images/Messaging.svg" alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Expedita sapiente accusantium officiis at voluptates deserunt nisi </p>
     </div>
     <!-- <div class="slide2">
         <img src="/T17-Alt_F4/images/jett.jpg" alt="">
@@ -35,20 +36,21 @@
     <div class="slide4">
         <img src="/T17-Alt_F4/images/valowall.jpg" alt="">
     </div> -->
-
+    <br><br>
     <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
     <a class="next" onclick="changeSlides(1)">&#10095;</a>
-
+    
 </section>
 
 
 <div><button id="but1">JOIN NOW</button></div>
 
 <div >
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
+    <span class="dots" onclick="currentSlide(1)"></span>
+    <span class="dots" onclick="currentSlide(2)"></span>
+    <span class="dots" onclick="currentSlide(3)"></span>
+</div>
+<br><br>
 
 <section id="features">
 
