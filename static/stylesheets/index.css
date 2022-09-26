@@ -25,7 +25,7 @@
     font-size: xx-large;
     position: absolute;
     top:55vh ;
-    right: 35vh;
+    right: 10vh;
     background-color: white;
     font-weight: bolder;
     border: 1px solid transparent;
@@ -36,7 +36,7 @@
     cursor: pointer;
 }
 #but1:hover{
-color: rgb(28, 195, 236);
+color: rgb(175, 19, 232);
 
 }
 
@@ -52,7 +52,6 @@ section > br{
 #slider img{
     width: 80vw;
     height: 80vh;
-    /* background-color: rgb(28, 195, 236); */
 }
 
 .dots {
@@ -80,18 +79,30 @@ section > br{
   #features{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 20px;
-  column-gap: 100px;
+  row-gap: 25px;
+  column-gap: 90px;
   position: absolute;
   left: 22vw;
   cursor: pointer;
 }
+
 .feature{
-border: 2px solid  rgb(208, 208, 208);
+border: .1px solid  rgb(208, 208, 208);
+box-shadow: 10px 20px 10px  rgba(59, 59, 59, 0.227);
 }
+
 .feature:hover {
     position: relative;
     top: -.5em;
-    
+    box-shadow: 10px 20px 10px  rgba(6, 6, 6, 0.227);
+}
 
+footer{
+    position: absolute;
+    bottom: 1vh;
+    left: 100px;
+}
+
+nav img {
+    height: 100vh;
 }
