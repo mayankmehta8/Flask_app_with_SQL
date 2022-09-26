@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackathon</title>
-    <link rel="stylesheet" href="./layout.css">
-    <link rel="stylesheet" href="./index.css">
+    
+    {% block head %}
+    {% endblock %}
 </head>
 
 <body>
@@ -31,7 +32,7 @@
 
     <section>
         <div class="slide1">
-            <img src="/T17-Alt_F4/images/bg1.jpg" alt="">
+            <img src="{{ url_for('static', filename='images/bg1.jpg') }}" alt="">
         </div>
         <!-- <div class="slide2">
             <img src="/T17-Alt_F4/images/jett.jpg" alt="">
@@ -48,22 +49,8 @@
 
     </section>
 
-
-
-
-
-
-
-
-
-
-
-    <!-- {% block body %}
-    {% endblock %} -->
-
-
-
-
+    {% block body %}
+    {% endblock %}
 
 </body>
 
