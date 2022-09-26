@@ -1,7 +1,7 @@
 from flask import Flask,render_template
-import psycopg2
 
 app = Flask(__name__)
+app.static_folder = 'static'
 @app.route("/")
 def main():
     return render_template("index.html")

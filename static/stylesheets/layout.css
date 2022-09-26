@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+#nav ul li {
+    padding: 12px 20px;
+    list-style: none;
+    display: inline;
+}
+
+
+
+#nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: inline;
+    padding: 0 15px;
+    font-size: 20px;
+    width: max-content;
+
+}
+
+#nav ul li a:hover {
+    color: rgb(28, 195, 236);
+    background-color: rgb(235, 235, 235);
+    padding: 20px;
+}
+
+#nav ul ul li {
+    width: 190px;
+    display: list-item;
+    position: relative;
+
+}
+
+#nav{
+    padding: 20px;
+    float: right;
+}
+
+#logo{
+    position: absolute;
+    left: 50px;
+}
+
+img{
+    width: 100vw;
+    height: 80vh;
+}
