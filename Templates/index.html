@@ -1,11 +1,79 @@
-{% extends "layout.html" %}
-{% block head %}
-<link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/index.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/layout.css') }}">
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/stylesheets/index.css">
+    <link rel="stylesheet" href="/static/stylesheets/layout.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+                <li><a href="#"><b><span id="logo">ALT F4</span></b></a></li>
+               
+                <li><a href="#">Question Paper Generator</a>
+                <li><a href="#">Study Material</a>
+                <li><a href="#">Chat Room</a>
+                <li><a href="#">Sign Up</a>
 
+                <li>
 
-{% block body %}
+        </ul>
+    </nav>
+    <section>
+    <div class="slide1">
+        <img src="/static/images/bg1.jpg" alt="">
+    </div>
+    <!-- <div class="slide2">
+        <img src="/T17-Alt_F4/images/jett.jpg" alt="">
+    </div>
+    <div class="slide3">
+        <img src="/T17-Alt_F4/images/sage.jpg" alt="">
+    </div>
+    <div class="slide4">
+        <img src="/T17-Alt_F4/images/valowall.jpg" alt="">
+    </div> -->
+
     <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
     <a class="next" onclick="changeSlides(1)">&#10095;</a>
-{% endblock %}
+
+</section>
+
+
+<div><button id="but1">JOIN NOW</button></div>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+<section id="features">
+    <div class="feature">
+        <img src="/static/images/Question Bank (2).svg" alt="Question Bank">
+        <div><h1>Question Bank</h1><br>
+            Question Bank Paper Generator
+        </div>
+
+    </div>
+    <div class="feature">
+        <img src="/static/images/Messaging.svg" alt="Chat Room">
+        <div><h1>Chat Room</h1><br>
+            Discuss with your fellow backmates
+
+    </div>
+    <div class="feature">
+        <img src="/static/images/study material.svg" alt="Study Material">
+        <div><h1>Study Material</h1>
+
+    </div>
+    <div class="feature">
+        <img src="/static/images/SPPU UPDATES (1).svg" alt="SPPU Updates">
+        <div><h1>SPPU Updates</h1>
+
+    </div>
+</section>
+
+</body>
+</html>
