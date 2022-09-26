@@ -80,14 +80,15 @@ section > br{
   #features{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 20px;
-  column-gap: 100px;
+  row-gap: 25px;
+  column-gap: 90px;
   position: absolute;
   left: 22vw;
   cursor: pointer;
 }
 .feature{
-border: 2px solid  rgb(208, 208, 208);
+border: .1px solid  rgb(208, 208, 208);
+box-shadow: 10px 20px 10px rgba(6, 6, 6, 0.227);
 }
 .feature:hover {
     position: relative;
