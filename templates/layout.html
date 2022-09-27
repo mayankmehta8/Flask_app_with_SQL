@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% block head %}
     {% endblock %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/nav.css') }}">
 </head>
 <body>
@@ -14,7 +15,7 @@
     <nav id="nav">
         <ul>
             
-            <!-- <li><a href="#"><b><span id="logo"><img src="./static/images/ourlogo.png" alt=""></span></b></a></li> -->
+             <li><a href="#"><b><span id="logo"><i class="fa fa-graduation-cap"></i></span></b></a></li>
             <li><a href="{{url_for('main')}}" target="_main">Home</a></li>
                 <li><a href="./qp.html" target="_main">Question Paper Generator</a></li>
                 <li><a href="./studyMaterial.html" target="_main">Study Material</a></li>
