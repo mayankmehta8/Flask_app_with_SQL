@@ -1,0 +1,84 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    }
+    .bg-img {
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 100%;
+    }
+    .bg-img:after {
+    position: absolute;
+    
+    top: 0; left: 0;
+    content:""; width: 100wh;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background: rgba(255, 255, 255, 0.174);
+    }
+    .content {
+    border-radius: 10px;
+    top: 37%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: absolute; left: 14%; text-align: center; width: 370px;
+    z-index: 999;
+    padding: 60px 32px;
+    transform: translate (-50%, -50%); background: rgba(255, 255, 255, 0.133);
+    border: 1px solid #fff;
+    backdrop-filter: blur (3px); box-shadow: 6px rgba(29, 29, 29, 0.203);
+    }
+    .content header {
+    color: white;
+    font-size: 33px;
+    font-weight: 600;
+    }
+    #user,#password { position: relative;
+        height: 45px;
+        width: 100%;
+        display: flex;
+        background: rgba(255, 255, 255, 0.94);
+        margin-bottom: 15px;
+        }
+        #submitf {
+        height: 100%; width: 100%;
+        background: transparent;
+        border: none;
+        outline: none; font-size: 16px; font-family: "Poppins", sans-serif;
+        color: #222;
+        }
+        .space {
+        margin-top: 16px;
+        }
+        .show {
+        position: absolute;
+        right: 13px; font-size: 13px;
+        font-weight: 700;
+        color: #222;
+        display: none;
+        cursor: pointer;
+        font-family: "Montserrat", sans-serif;
+        }
+        .pass-key:valid ~ .show {
+        display: block;
+        }
+        .pass {
+            text-align: left; margin: 10px 0;
+            color: white;
+            } .pass a { font-family: "Poppins", sans-serif; 
+            text-decoration: none;
+            }
+            .pass:hover a {
+            text-decoration: underline;
+            } #submitf{
+            color: white;
+            background: #682efc; border: 1px solid #7741fd; font-size: 18px; letter-spacing: 1px; font-weight: 600; font-family: "Montserrat", sans-serif; transition: .3s ease;
+            cursor: pointer; height: 40px; margin-bottom: 7px;
+            } #submitf:hover { background: #4a0de4f5; }
+             
+    .bg-img{
+        background-repeat: no-repeat;
+    background-size: auto;
+    }
