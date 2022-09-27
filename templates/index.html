@@ -1,7 +1,8 @@
 {% extends "layout.html" %}
 {% block head %}
+<title>Home</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/index.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/nav.css') }}">
+
 {% endblock %}
 {% block body %}
 
@@ -48,7 +49,7 @@
     </div>
 
     <div class="feature">
-        <a href="./chat.html" target="_main"><img src="./static/images/discussion forum button.png" alt="Chat Room"></a>
+        <a href="{{url_for('login')}}" target="_main"><img src="./static/images/discussion forum button.png" alt="Chat Room"></a>
         
     </div>
 
@@ -62,7 +63,7 @@
     </div>
 
     <div class="feature">
-        <a href="http://sppudocs.unipune.ac.in/sites/news_events/SitePages/Home.aspx" target="_main"></a><img src="./static/images/sppu updates button.png" alt="SPPU Updates">
+        <a href="http://sppudocs.unipune.ac.in/sites/news_events/SitePages/Home.aspx" target="_main"><img src="./static/images/sppu updates button.png" alt="SPPU Updates"></a>
 
     </div><br>
     <br>
