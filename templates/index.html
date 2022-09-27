@@ -2,39 +2,25 @@
 {% block head %}
 <title>Home</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/index.css') }}">
-
+<script src="{{url_for('static', filename='Javascript/carousel.js')}}"></script>
 {% endblock %}
 {% block body %}
 
 <br>
     <section id="slider">
-    <div class="slide1">
-        <img src="./static/images/bg1 (2).jpeg" alt="">
-        <b><p>GUIDING YOU IN <br>YOUR DARKEST TIMES</p></b>
+        <div id="slide">
+        <img id="Frame" src="./static/images/Frame.png" alt="">
     </div>
-    <!-- <div class="slide2">
-        <img src="/T17-Alt_F4/images/jett.jpg" alt="">
-    </div>
-    <div class="slide3">
-        <img src="/T17-Alt_F4/images/sage.jpg" alt="">
-    </div>
-    <div class="slide4">
-        <img src="/T17-Alt_F4/images/valowall.jpg" alt="">
-    </div> -->
     <br><br>
-    <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
-    <a class="next" onclick="changeSlides(1)">&#10095;</a>
+    <a class="prev" onclick="prev()">&#10094;</a>
+    <a class="next" onclick="next()">&#10095;</a>
     
 </section>
 
 
-<div><button id="but1">JOIN NOW</button></div>
+<div>
+    <a href="{{url_for('login')}}" target="_main"><button id="but1" href="{{url_for('register')}}">JOIN NOW</button></a></div>
 
-<div >
-    <span class="dots" onclick="currentSlide(1)"></span>
-    <span class="dots" onclick="currentSlide(2)"></span>
-    <span class="dots" onclick="currentSlide(3)"></span>
-</div>
 <br><br>
 
 <br>
@@ -43,7 +29,7 @@
 <section id="features">
 
     <div class="feature">
-        <a href="./qp.html" target="_main"><img src="./static/images/question paper button.png" alt="Question Bank"></a>
+        <a href="https://drive.google.com/drive/folders/1d3xCE3h5fYboumnX-LCC0M7dSQri-fCu?usp=sharing" target="_main"><img src="./static/images/question paper button.png" alt="Question Bank"></a>
         
 
     </div>
@@ -54,7 +40,7 @@
     </div>
 
     <div class="feature">
-        <a href="./studyMaterial.html" target="_main"><img src="./static/images/study material button.png" alt="Study Material"></a>
+        <a href="https://drive.google.com/drive/folders/1vBvyMeKEjWxc9gVjCFTzl-cM4WJu31NQ?usp=sharing" target="_main"><img src="./static/images/study material button.png" alt="Study Material"></a>
         
 
 
@@ -63,7 +49,7 @@
     </div>
 
     <div class="feature">
-        <a href="http://sppudocs.unipune.ac.in/sites/news_events/SitePages/Home.aspx" target="_main"><img src="./static/images/sppu updates button.png" alt="SPPU Updates"></a>
+        <a href="{{url_for('update')}}" target="_main"><img src="./static/images/sppu updates button.png" alt="SPPU Updates"></a>
 
     </div><br>
     <br>

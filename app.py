@@ -36,7 +36,11 @@ class LoginForm(FlaskForm):
 
 @app.route("/")
 def main():
-    return render_template("index.html")
+    return render_template("index.html") 
+
+@app.route("/updates")
+def update():
+    return render_template("updates.html")
 
 @app.route("/login", methods=["GET",'POST'])
 def login():
@@ -57,7 +61,7 @@ def register():
         db.session.commit()
         return redirect(url_for("login"))
     return render_template("register.html",form=form)
-@app.route("/aboout")
+@app.route("/about")
 def about():
     return render_template("about.html")
 if __name__=='__main__':

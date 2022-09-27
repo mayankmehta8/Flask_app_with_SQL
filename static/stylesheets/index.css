@@ -24,7 +24,7 @@
 #but1{
     font-size: xx-large;
     position: absolute;
-    top:55vh ;
+    top:62vh ;
     right: 10vh;
     background-color: white;
     font-weight: bolder;
@@ -48,10 +48,18 @@ color: rgb(118 127 252);
 section > br{
     clear: both;
 }
-
-#slider img{
-    width: 80vw;
+#slide{
+    margin-top: -20px;
+    width: 100vw;
     height: 80vh;
+    overflow: hidden;
+}
+
+#Frame{
+    margin-top: -20px;
+    width: 500vw;
+    height: 80vh;
+    
 }
 
 .dots {
@@ -73,7 +81,6 @@ section > br{
   #slider p{
     position: absolute;
     top: 45vh;
-    right: 10vw;
   }
 
   #features{
@@ -144,4 +151,91 @@ overflow-x: hidden;
     left: 50px;
     padding: 10px;
     
+}
+#photos{
+    position: relative;
+    top: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    cursor: pointer;
+}
+#photos >div{
+    box-shadow: 10px 20px 10px 5px rgba(59, 59, 59, 0.227);
+    border-radius: 1%;
+    padding: 15px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+#photos >div:hover{
+    border: 0.1px solid  rgb(182, 180, 180);
+    position: relative;
+    top: -.5em;
+    box-shadow: 10px 20px 10px 8px rgba(0, 0, 0, 0.227);
+
+}
+#photos div >div h2{
+    position: relative;
+    left: 110px;
+    padding: 5px;
+}
+#photos >div>div a{
+    position: relative;
+    left: 50px;
+    padding: 10px;
+    
+}
+
+#updates{
+    position: absolute;
+    top: 0vh;
+    left: 15vh;
+    height: 100vh;
+    width: 100vw;
+    /* border: 2px solid #717171; */
+    background-repeat: no-repeat;
+    background-image:-webkit-image-set();
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: url("/static/images/WHITE\ BACKGROUND.png");
+    
+}
+#updates h1{
+    position: relative;
+    top: 5vh;
+    left: 63vh;
+    color: white;
+    font-size: 7vh;
+}
+#results{
+    position: relative;
+    top: 2vh;
+    left: 20vh;
+  cursor: pointer;
+
+}
+#re{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    position: absolute;
+    left: 90vh;
+    top: 33vh;
+    display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 7vh;
+  column-gap: 90px;
+} 
+    #re div{
+
+        cursor: pointer;
+    }
+
+#re img{
+/* height: 60vh; */
+width: 60vh;
+
+
+
 }
